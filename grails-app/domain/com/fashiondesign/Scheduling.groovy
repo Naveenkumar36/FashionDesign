@@ -1,5 +1,7 @@
 package com.fashiondesign
 
+import java.util.Date;
+
 class Scheduling {
 	
 	String phoneNo
@@ -24,7 +26,9 @@ class Scheduling {
 	
 	String type
 	
-	int creationTime // for date entry in timestamp
+	Date dateCreated
+	
+	Date lastUpdated
 
 	static constraints = {
 		

@@ -10,8 +10,6 @@ class Account {
 	
 	String email
 	
-	boolean gender
-	
 	String area
 	
 	String street
@@ -22,9 +20,10 @@ class Account {
 	
 	String postal
 	
-	int creationTime //for date entry in timestamp
+	Date dateCreated
 	
-	String validPassword
+	Date lastUpdated
+	
 
     static constraints = {
 		
@@ -34,11 +33,7 @@ class Account {
 		
 		phoneNo blank:false, nullable: false
 		
-		email  blank:false, nullable: false
-		
-		gender  nullable: false
-		
-		validPassword blank:false, nullable: false, maxSize: 32
+		email  blank:false, nullable: false, email:true 
 		
 		area nullable:true
 		
