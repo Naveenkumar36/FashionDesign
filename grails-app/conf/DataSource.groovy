@@ -17,7 +17,7 @@ environments {
             dbCreate = "update" // 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://localhost:3306/fashionStreet?useUnicode=yes&characterEncoding=UTF-8"
             username = "root"
-            password = "server"
+            password = "jay123"
         }
     } 
     test {

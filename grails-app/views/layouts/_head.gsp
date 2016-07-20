@@ -1,6 +1,6 @@
 </head>
 <meta charset="UTF-8">
-<title>Preva | Admin</title>
+<title> fashionDESIGN</title>
 <meta
 	content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
 	name='viewport'>
@@ -54,11 +54,13 @@
 <link rel="stylesheet" href="${request.getContextPath()}/css/chosen.css">
  <!-- Morris chart -->
     <link href="${request.getContextPath()}/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    
+     <link rel="shortcut icon" href="${request.contextPath}/images/favicon.ico">
 
 
 
 
-<script src="${request.getContextPath()}/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+
 <!-- Bootstrap 3.3.2 JS -->
 <script>
       $.widget.bridge('uibutton', $.ui.button);
@@ -98,6 +100,8 @@
 <!-- Morris.js charts -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="${request.getContextPath()}/plugins/morris/morris.min.js" type="text/javascript"></script>
+    
+    <script src="${request.getContextPath()}/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 
 <script type="text/javascript">
       $(function () {

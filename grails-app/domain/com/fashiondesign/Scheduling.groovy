@@ -42,6 +42,8 @@ class Scheduling {
 		
 		service nullable:true
 		
+		type nullable:true
+		
 	}
    
 }

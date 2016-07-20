@@ -15,7 +15,7 @@ class LoginService {
 		if(validatePassword(inputMap.get("password"))){
 			throw new CustomException("password Should not be empty")
 		}
-		User userInstance = User.findByUserIdAndPassword(inputMap.get("userId"),inputMap.get("password"))
+		User userInstance = User.findByEmailIdAndPassword(inputMap.get("userId"),inputMap.get("password"))
 		if(userInstance){
 			return userInstance
 		}else{

@@ -19,8 +19,6 @@ class User {
 	
 	String role;
 	
-	Account accountId
-	
 	Date dateCreated
 	
 	Date lastUpdated
@@ -41,6 +39,5 @@ class User {
 		
 		role(nullable:false,blank:false)
 		
-		accountId(nullable:false,blank:false)
     }
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%--<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="layout" content="main">
@@ -35,4 +35,96 @@
 			</g:form>
 		</div>
 	</body>
+</html>
+--%>
+
+<!DOCTYPE html>
+<html>
+<g:render template="/layouts/head" />
+<g:render template="/layouts/header" />
+<!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
+<body class="hold-transition skin-blue layout-top-nav">
+<div class="wrapper">
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Book Tailor
+          
+        </h1>
+      </section>
+      <section class="content">
+				<div class="row">
+					<!-- left column -->
+					<div class="col-lg-3"></div>
+					<div class="col-md-6">
+						<!-- ------------error display can be added here---------------- -->
+						<g:if test="${flash.error}">
+							<div class="alert alert-danger alert-dismissable">
+								<i class="fa fa-ban"></i>
+								<button type="button" class="close" data-dismiss="alert">&times;</button>
+								<strong><i class="icon24 i-close-4"></i> Error: </strong>
+								${flash.error}, try submitting again.
+							</div>
+						</g:if>
+						<g:if test="${flash.message}">
+							<div class="alert alert-success alert-dismissable">
+								<i class="fa fa-check"></i>
+								<button type="button" class="close" data-dismiss="alert">&times;</button>
+								<strong><i class="icon24 i-close-4"></i> <b>Success:</b> </strong>
+								${flash.message}
+							</div>
+						</g:if>
+						<!-- general form elements -->
+						<div class="box box-formhead box-solid">
+							<div class="box-header">
+								<h3 class="box-title">Tailor</h3>
+							</div>
+							<g:form url="[resource:schedulingInstance, action:'save']" >
+								
+								<div class="box-footer"></div>
+								<fieldset class="form">
+									<g:render template="form" />
+								</fieldset>
+								<fieldset class="buttons">
+									<div class="box-footer">
+										<%--<h5
+											style="color: #3C80BC; font-weight: bold; text-align: center">Creating
+											New User</h5>
+										--%><div class="col-lg-2"></div>
+										<%--<g:createUpdateActionLink createUpdateButtonName="Submit"
+											createUpdateButtonClass="btn btn-primary btn-sm"></g:createUpdateActionLink>
+										<div class="col-lg-3"></div>
+										<g:cancelActionLink controller="Account" cancelAction="index"
+											cancelButtonName="Cancel"
+											cancelButtonClass="btn btn-primary btn-sm"
+											editDeleteId="${accountInstance?.id}"></g:cancelActionLink>
+									--%>
+									<div class="col-lg-3"></div>
+									<g:submitButton class="btn btn-primary btn-xs" name="Book Tailor" />
+									
+									</div>
+								</fieldset>
+							</g:form>
+						</div>
+						<!-- /.box -->
+					</div>
+				</div>
+			</section>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="container">
+      <strong>Copyright &copy; 2014-2016 <a href="#">Fashion Design</a>.</strong> All rights
+      reserved.
+    </div>
+    <!-- /.container -->
+  </footer>
+</div>
+<!-- ./wrapper -->
+</body>
+
 </html>

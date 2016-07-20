@@ -92,7 +92,7 @@ body {
 
 .content-wrapper, .right-side {
 	min-height: 100%;
-	background-color: #ACD1E9;
+	background-color: #E7EDF2;
 	z-index: 800
 }
 
@@ -3159,10 +3159,10 @@ table.text-center, table.text-center td, table.text-center th {
 	float: left;
 	padding: 10px;
 	text-align: center
-}
+} 
 
 .users-list>li img {
-	border-radius: 50%;
+	border-radius: 0%;
 	max-width: 100%;
 	height: auto
 }

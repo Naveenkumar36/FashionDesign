@@ -8,7 +8,7 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class GalleryController {
 
-    static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
+    static allowedMethods = [save: "POST", update: "PUT"]
 
     def index(Integer max) {
         respond Gallery.list(params), model:[galleryInstanceCount: Gallery.count()]
@@ -86,14 +86,14 @@ class GalleryController {
         }
 
         galleryInstance.delete flush:true
-
-        request.withFormat {
+		redirect action:'index'
+       /* request.withFormat {
             form multipartForm {
                 flash.message = message(code: 'default.deleted.message', args: [message(code: 'Gallery.label', default: 'Gallery'), galleryInstance.id])
                 redirect action:"index", method:"GET"
             }
             '*'{ render status: NO_CONTENT }
-        }
+        }*/
     }
 	 
 	def itemUploaded = {

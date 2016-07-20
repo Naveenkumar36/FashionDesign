@@ -1,5 +1,5 @@
 
-<%@ page import="com.preva.User" %>
+<%@ page import="com.fashiondesign.User" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -96,3 +96,5 @@
 		</div>
 	</body>
 </html>
+
+
